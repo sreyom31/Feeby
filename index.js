@@ -1,8 +1,9 @@
-const express = require("express");
+const express = require("express")
+require('./db/mongoose')
 require('./services/passport')
 const authRouter = require('./routes/authRoutes')
 
-const app = express();
+const app = express()
 
 // Middlewares
 app.use(authRouter)
