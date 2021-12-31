@@ -4,6 +4,12 @@ import {connect, useDispatch} from "react-redux";
 import * as actions from './actions'
 import Header from "./components/Header";
 
+const Dashboard = () => {
+    return (
+        <h1>Dashboard</h1>
+    )
+}
+
 function App() {
     const dispatch = useDispatch();
     useEffect(() => {
@@ -17,7 +23,7 @@ function App() {
                 <div>
                     <Header />
                     {/*<Route exact path="/" component={} />*/}
-                    {/*<Route exact path="/surveys" component={} />*/}
+                    <Route exact path="/surveys" component={Dashboard} />
                     {/*<Route path="/surveys/new" component={} />*/}
                 </div>
             </BrowserRouter>
