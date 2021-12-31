@@ -8,7 +8,7 @@ function Header(props) {
         else if(!props.auth) return (
             <li><a href="/auth/google">Login With Google</a></li>
         )
-        else return (<li><a>Logout</a></li>)
+        else return (<li><a href="/api/logout">Logout</a></li>)
     }
     return (
         <nav>

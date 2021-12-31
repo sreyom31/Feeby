@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {connect, useDispatch} from "react-redux";
 import * as actions from './actions'
 import Header from "./components/Header";
+import Landing from "./components/Landing";
 
 const Dashboard = () => {
     return (
@@ -22,7 +23,7 @@ function App() {
             <BrowserRouter>
                 <div>
                     <Header />
-                    {/*<Route exact path="/" component={} />*/}
+                    <Route exact path="/" component={Landing} />
                     <Route exact path="/surveys" component={Dashboard} />
                     {/*<Route path="/surveys/new" component={} />*/}
                 </div>
