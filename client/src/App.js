@@ -1,8 +1,19 @@
 import React from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
     return (
-        <div>Hi There!</div>
+        <div>
+            <BrowserRouter>
+                <div>
+                    <Header />
+                    <Route exact path="/" component={} />
+                    <Route exact path="/surveys" component={} />
+                    <Route path="/surveys/new" component={} />
+                </div>
+            </BrowserRouter>
+        </div>
     );
 }
 
