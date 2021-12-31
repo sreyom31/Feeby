@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
+import {Link} from "react-router-dom";
 
 function Header(props) {
     console.log(props)
@@ -13,7 +14,7 @@ function Header(props) {
     return (
         <nav>
             <div className="nav-wrapper">
-                <a href="" className="left brand-logo">Feeby</a>
+                <Link to={props.auth ? '/surveys' : '/'} href="" className="left brand-logo">Feeby</Link>
                 <ul id="nav-mobile" className="right">
                     <li>{renderContent()}</li>
                 </ul>
