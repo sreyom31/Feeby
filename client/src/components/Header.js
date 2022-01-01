@@ -16,7 +16,7 @@ function Header(props) {
             <div className="nav-wrapper">
                 <Link to={props.auth ? '/surveys' : '/'} href="" className="left brand-logo">Feeby</Link>
                 <ul id="nav-mobile" className="right">
-                    <li>{renderContent()}</li>
+                    {renderContent()}
                 </ul>
             </div>
         </nav>
