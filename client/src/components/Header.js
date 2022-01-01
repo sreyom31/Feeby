@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import {Link} from "react-router-dom";
+import Payments from "./payments";
 
 function Header(props) {
     console.log(props)
@@ -9,7 +10,7 @@ function Header(props) {
         else if(!props.auth) return (
             <li><a href="/auth/google">Login With Google</a></li>
         )
-        else return (<li><a href="/api/logout">Logout</a></li>)
+        else return ([<Payments />, <li><a href="/api/logout">Logout</a></li>])
     }
     return (
         <nav>
