@@ -10,7 +10,7 @@ function Header(props) {
         else if(!props.auth) return (
             <li><a href="/auth/google">Login With Google</a></li>
         )
-        else return ([<Payments />, <li><a href="/api/logout">Logout</a></li>])
+        else return ([<li key={"1"}><Payments /></li>, <li key={"2"}><a href="/api/logout">Logout</a></li>])
     }
     return (
         <nav>
